@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Serenas Slot </title> <!-- title for tab at top-->
+    <!--<link rel="stylesheet" href="lab 01.css">  reference to the style sheet-->
+</head>
+<body>
+
+<h2>Serena's Slot</h2>
+
+<p>Here comes a handpay</p>
+
+<button onclick="document.getElementById('reel').innerHTML = getRndInteger()">Click Me</button>
+
+<p id="reel">
+
+
+
+
+<script>
+  function getRndInteger() {
+    //return Math.floor(Math.random() * (max - min + 1) ) + min;
+
+    let arr = [];
+    while (arr.length < 3) {
+      let r = Math.floor(Math.random() * 100) + 1;
+      if (arr.indexOf(r) === -1) arr.push(r);
+    }
+    return arr;
+  }
+
+</script>
+
+
+
+</body>
+</html>
