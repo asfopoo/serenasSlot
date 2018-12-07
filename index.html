@@ -23,8 +23,39 @@
 
     let arr = [];
     while (arr.length < 3) {
-      let r = Math.floor(Math.random() * 100) + 1;
-      if (arr.indexOf(r) === -1) arr.push(r);
+      let r = Math.floor(Math.random() * 10) + 1;
+      //if (arr.indexOf(r) === -1) arr.push(r);
+      if(r === 1){
+        arr.push("<img src='./bonus.jpeg' height=200px width=200px >");
+      }
+      else if(r === 2){
+        arr.push("<img src='./daisy.png' height=200px width=200px >");
+      }
+      else if(r === 3){
+        arr.push("<img src='./dilophosaurus.png' height=200px width=200px >");
+      }
+      else if(r === 4){
+        arr.push("<img src='./dog.png' height=200px width=200px >");
+      }
+      else if(r === 5){
+        arr.push("<img src='./Hello.jpeg' height=200px width=200px >");
+      }
+      else if(r === 6){
+        arr.push("<img src='./kitty.gif' height=200px width=200px >");
+      }
+      else if(r === 7){
+        arr.push("<img src='./peach.jpeg' height=200px width=200px >");
+      }
+      else if(r === 8){
+        arr.push("<img src='./piggy.png' height=200px width=200px >");
+      }
+      else if(r === 9) {
+        arr.push("<img src='./puppy.png' height=200px width=200px >");
+      }
+      else{
+        arr.push("<img src='./trex.jpeg' height=200px width=200px >");
+      }
+
     }
     return arr;
   }
